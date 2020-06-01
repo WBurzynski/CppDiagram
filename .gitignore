@@ -338,3 +338,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+#ignore .xcf (GIMP) files and .fbp (wxFormBuilder) files
+*.xcf
+*.fbp

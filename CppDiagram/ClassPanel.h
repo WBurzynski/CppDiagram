@@ -25,8 +25,12 @@ private:
 	wxBoxSizer *MainSizer, *DataSizer, *FunctionSizer;
 	wxStaticText* ClassName;
 	wxStaticLine* m_staticline1;
+	//TODO: Propagate sigle button click to parent
+	//NOTE: Parent is this class
 	vector<FunctionPanel*> memberFunctions;
 	wxStaticLine* m_staticline2;
+	//TODO: Propagate sigle button click to parent
+	//NOTE: Parent is this class
 	vector<VariablePanel*> memberVariables;
 	
 	static int NextID;

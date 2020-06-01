@@ -5,6 +5,7 @@
 #include "State.h"
 MainFrame::MainFrame(wxWindow* parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size, long style) : frameLayout(parent, id, title, pos, size, style)
 {
+	//TODO: Add possibility to change size of canvas
 	canvas->SetVirtualSize(wxSize(2000, 2000));
 	State::set(State::NoButton, nullptr);
 	Center();
@@ -32,7 +33,7 @@ void MainFrame::OnKeyDown(wxKeyEvent& event)
 
 void MainFrame::OnNewSelected(wxCommandEvent& event)
 {
-	if (true)//if current content has not been saved TODO: Replace true with checking memento stack
+	if (true)//if current content has not been saved TODO: Replace true with checking memento pattern
 	{
 		if (wxMessageBox(_("Unsaved changes will be lost. Do you want to continue?"), _("C++ Diagram editor"),
 			wxICON_QUESTION | wxYES_NO, this) == wxNO)
@@ -43,7 +44,7 @@ void MainFrame::OnNewSelected(wxCommandEvent& event)
 
 void MainFrame::OnOpenSelected(wxCommandEvent& event)
 {
-	if (true)//if current content has not been saved TODO: Replace true with checking memento stack
+	if (true)//if current content has not been saved TODO: Replace true with checking memento pattern
 	{
 		if (wxMessageBox(_("Unsaved changes will be lost. Do you want to continue?"), _("C++ Diagram editor"),
 			wxICON_QUESTION | wxYES_NO, this) == wxNO)
@@ -79,11 +80,13 @@ void MainFrame::OnSaveSelected(wxCommandEvent& event)
 
 void MainFrame::OnAuthorSelected(wxCommandEvent& event)
 {
+	//TODO: Add content
 	event.Skip();
 }
 
 void MainFrame::OnSourceSelected(wxCommandEvent& event)
 {
+	//TODO: Add content
 	event.Skip();
 }
 
