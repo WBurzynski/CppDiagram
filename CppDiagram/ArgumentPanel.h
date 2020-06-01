@@ -27,6 +27,7 @@ private:
 protected:
 	wxStaticText* ArgumentNumber;
 	wxStaticText* TypeText;
+	//TODO: Correct name
 	wxStaticText* NametText;
 	wxStaticText* ValueText;
 	wxTextCtrl* TypeTextCtrl;
