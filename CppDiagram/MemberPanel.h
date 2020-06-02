@@ -34,6 +34,9 @@ protected:
 	void OnChildMauseEnter(wxMouseEvent& event);
 	void OnChildMauseLeave(wxMouseEvent& event);
 
+	void onMouseDown(wxMouseEvent& event);
+	void onMouseUp(wxMouseEvent& event);
+	void onMove(wxMouseEvent& event);
 public:
 
 	MemberPanel(wxWindow* parent, wxWindowID id = wxID_ANY, const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize(-1, -1), long style = wxTAB_TRAVERSAL);

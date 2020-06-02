@@ -31,6 +31,24 @@ void MemberPanel::OnChildMauseLeave(wxMouseEvent& event)
 	IsOverButton = false;
 }
 
+void MemberPanel::onMouseDown(wxMouseEvent& event)
+{
+	event.ResumePropagation(1);
+	event.Skip();
+}
+
+void MemberPanel::onMouseUp(wxMouseEvent& event)
+{
+	event.ResumePropagation(1);
+	event.Skip();
+}
+
+void MemberPanel::onMove(wxMouseEvent& event)
+{
+	event.ResumePropagation(1);
+	event.Skip();
+}
+
 MemberPanel::MemberPanel(wxWindow* parent, wxWindowID id, const wxPoint& pos, const wxSize& size, long style) : wxPanel(parent, id, pos, size, style)
 {
 	wxBoxSizer* bSizer1;
@@ -69,7 +87,7 @@ MemberPanel::MemberPanel(wxWindow* parent, wxWindowID id, const wxPoint& pos, co
 
 	memberText->Bind(wxEVT_ENTER_WINDOW, &MemberPanel::OnChildMauseEnter, this);
 	memberText->Bind(wxEVT_LEAVE_WINDOW, &MemberPanel::OnChildMauseLeave, this);
-
+	memberText->Bind(wxEVT_LEFT_DOWN, &MemberPanel::onMouseDown, this);
 }
 
 MemberPanel::~MemberPanel()
