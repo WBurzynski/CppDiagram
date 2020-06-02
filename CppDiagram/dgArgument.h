@@ -1,5 +1,5 @@
 #pragma once
-
+//TODO: Create namespace diagram and remove dg suffix
 #include <string>
 
 using std::string;

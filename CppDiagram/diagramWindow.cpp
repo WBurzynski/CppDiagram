@@ -14,7 +14,7 @@ void DiagramWindow::serialize(std::ofstream& file)
 	{
 		panel->serialize(file);
 	}
-	for (auto relation : relationPanels)
+	for (auto relation : relationPanels)//TODO: possibly find more expresive algorithm in STL library
 	{
 		relation->serialize(file);
 	}

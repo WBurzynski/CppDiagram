@@ -13,7 +13,6 @@ public:
 
 	void OnEditPressed(wxCommandEvent& event) override;
 	void OnDeletePressed(wxCommandEvent& event) override;
-	
 	VariablePanel(wxWindow* parent, dgVariable _data);
 };
 

@@ -13,7 +13,6 @@ private:
 
 	void OnEditPressed(wxCommandEvent& event) override;
 	void OnDeletePressed(wxCommandEvent& event) override;
-
 public:
 
 	FunctionPanel(wxWindow* parent, dgFunction _data);

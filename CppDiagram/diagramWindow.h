@@ -34,10 +34,19 @@ private:
 	void OnPaint(wxPaintEvent& event);
 
 public:
+	//serialize content of diagram
 	void serialize(std::ofstream& file);
+	//deserialize content of a file
 	void deserialize(std::ifstream& file);
+	//process keyboard events 
+    //TODO: implement shortcuts
 	void ProcessKeyboard(wxKeyEvent& event);
+	//clear content of diagram and make diagram empty.
+	//TODO: Change name to more expressive
 	void clear();
+	//helper function for deserialisation
+	//Set ID of every ClassPanel on diagram.
+	//TODO: Change name to more expressive
 	void setIDs();
 	DiagramWindow(wxWindow* parent, wxWindowID winid = -1, const wxPoint & pos = wxDefaultPosition, const wxSize & size = wxDefaultSize, long style = -1073741824L, const wxString & name = wxPanelNameStr);
 	vector<RelationPanel*> relationPanels;//TODO: make it private
