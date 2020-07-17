@@ -1,7 +1,0 @@
-èrÛd≥a:
-
-https://www.uml-diagrams.org/nested-classifier.html
-https://en.cppreference.com/w/
-http://notepad2.blogspot.com/2012/04/how-to-indicate-static-method-in-uml.html
-http://www.csci.csusb.edu/dick/samples/uml1b.html
-https://docs.nomagic.com/pages/viewpage.action?pageId=38044261
