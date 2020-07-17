@@ -1,0 +1,8 @@
+/home/wojciech/C++/CppDiagram/build/CMakeFiles/rebuild_cache.dir
+/home/wojciech/C++/CppDiagram/build/CMakeFiles/edit_cache.dir
+/home/wojciech/C++/CppDiagram/build/CMakeFiles/sources.dir
+/home/wojciech/C++/CppDiagram/build/src/CMakeFiles/rebuild_cache.dir
+/home/wojciech/C++/CppDiagram/build/src/CMakeFiles/edit_cache.dir
+/home/wojciech/C++/CppDiagram/build/bin/CMakeFiles/rebuild_cache.dir
+/home/wojciech/C++/CppDiagram/build/bin/CMakeFiles/edit_cache.dir
+/home/wojciech/C++/CppDiagram/build/bin/CMakeFiles/CppDiagram.dir

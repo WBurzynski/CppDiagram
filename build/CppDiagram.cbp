@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CppDiagram"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\bin\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/wojciech/C++/CppDiagram/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/wojciech/C++/CppDiagram/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/wojciech/C++/CppDiagram/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sources">
+				<Option output="/home/wojciech/C++/CppDiagram/build/libsources.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wojciech/C++/CppDiagram/build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_FILE_OFFSET_BITS=64"/>
+					<Add option="-DWXUSINGDLL"/>
+					<Add option="-D__WXGTK__"/>
+					<Add directory="/usr/local/lib/wx/include/gtk3-unicode-3.1"/>
+					<Add directory="/usr/local/include/wx-3.1"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 sources"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sources/fast">
+				<Option output="/home/wojciech/C++/CppDiagram/build/libsources.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wojciech/C++/CppDiagram/build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_FILE_OFFSET_BITS=64"/>
+					<Add option="-DWXUSINGDLL"/>
+					<Add option="-D__WXGTK__"/>
+					<Add directory="/usr/local/lib/wx/include/gtk3-unicode-3.1"/>
+					<Add directory="/usr/local/include/wx-3.1"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 sources/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CppDiagram">
+				<Option output="/home/wojciech/C++/CppDiagram/build/bin/CppDiagram" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wojciech/C++/CppDiagram/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_FILE_OFFSET_BITS=64"/>
+					<Add option="-DWXUSINGDLL"/>
+					<Add option="-D__WXGTK__"/>
+					<Add directory="/usr/local/lib/wx/include/gtk3-unicode-3.1"/>
+					<Add directory="/usr/local/include/wx-3.1"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/bin/Makefile&quot;  VERBOSE=1 CppDiagram"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/bin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/bin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CppDiagram/fast">
+				<Option output="/home/wojciech/C++/CppDiagram/build/bin/CppDiagram" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wojciech/C++/CppDiagram/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_FILE_OFFSET_BITS=64"/>
+					<Add option="-DWXUSINGDLL"/>
+					<Add option="-D__WXGTK__"/>
+					<Add directory="/usr/local/lib/wx/include/gtk3-unicode-3.1"/>
+					<Add directory="/usr/local/include/wx-3.1"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/bin/Makefile&quot;  VERBOSE=1 CppDiagram/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/bin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/wojciech/C++/CppDiagram/build/bin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/wojciech/C++/CppDiagram/bin/CppDiagram.cpp">
+			<Option target="CppDiagram"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/ArgumentPanel.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/ArgumentPanel.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/ClassButtonPressed.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/ClassButtonPressed.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/ClassPanel.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/ClassPanel.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/DataButtonPressed.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/DataButtonPressed.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/DataMemberDialog.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/DataMemberDialog.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/DerrivedButtonPressed.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FreeState.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FriendshipButtonPressed.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FriendshipButtonPressed.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FunctionButtonPressed.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FunctionButtonPressed.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FunctionDialog.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FunctionDialog.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FunctionDialogLayout.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FunctionDialogLayout.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FunctionPanel.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/FunctionPanel.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/InheritanceButtonPressed.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/InheritanceButtonPressed.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/MainFrame.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/MainFrame.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/MemberDialog.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/MemberDialog.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/MemberPanel.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/MemberPanel.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/NestingButtonPressed.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/NestingButtonPressed.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/NoButtonPressed.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/NoButtonPressed.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/RelationPanel.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/RelationPanel.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/State.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/State.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/VariablePanel.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/VariablePanel.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/dgArgument.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/dgArgument.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/dgFunction.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/dgFunction.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/dgVariable.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/dgVariable.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/diagramWindow.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/diagramWindow.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/frameLayout.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/frameLayout.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/mauseState.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/mauseState.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/stateHolder.cpp">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/stateHolder.h">
+			<Option target="sources"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/wojciech/C++/CppDiagram/bin/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bin\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
