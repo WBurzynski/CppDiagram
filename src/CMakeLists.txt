@@ -1,60 +1,23 @@
 cmake_minimum_required(VERSION 3.16)
-target_sources( sources PUBLIC
-    dgArgument.h
-    FunctionDialog.h
-    NestingButtonPressed.cpp
-    dgFunction.cpp
-    FunctionDialogLayout.cpp
-    NestingButtonPressed.h
-    ArgumentPanel.cpp
-    dgFunction.h
-    FunctionDialogLayout.h
-    NoButtonPressed.cpp
-    ArgumentPanel.h
-    dgVariable.cpp
-    FunctionPanel.cpp
-    NoButtonPressed.h
-    ClassButtonPressed.cpp
-    dgVariable.h
-    FunctionPanel.h
-    RelationPanel.cpp
-    ClassButtonPressed.h
-    diagramWindow.cpp
-    InheritanceButtonPressed.cpp
-    RelationPanel.h
-    ClassPanel.cpp
-    diagramWindow.h
-    InheritanceButtonPressed.h
-    State.cpp
-    ClassPanel.h
-    frameLayout.cpp
-    MainFrame.cpp
-    State.h
-    frameLayout.h
-    MainFrame.h
-    stateHolder.cpp
-    DataButtonPressed.cpp
-    FreeState.cpp
-    mauseState.cpp
-    stateHolder.h
-    DataButtonPressed.h
-    FriendshipButtonPressed.cpp
-    mauseState.h
-    VariablePanel.cpp
-    DataMemberDialog.cpp
-    FriendshipButtonPressed.h
-    MemberDialog.cpp
-    VariablePanel.h
-    DataMemberDialog.h
-    FunctionButtonPressed.cpp
-    MemberDialog.h
-    DerrivedButtonPressed.cpp
-    FunctionButtonPressed.h
-    MemberPanel.cpp
-    dgArgument.cpp
-    FunctionDialog.cpp
-    MemberPanel.h
-  )
-find_package(wxWidgets REQUIRED core base)
-include(${wxWidgets_USE_FILE})
-target_link_libraries(sources ${wxWidgets_LIBRARIES})
+
+# Note that headers are optional, and do not affect add_library, but they will not
+# show up in IDEs unless they are listed in add_library.
+
+# Optionally glob, but only for CMake 3.12 or later:
+file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${CppDiagram_SOURCE_DIR}/include/*.h")
+
+# Make an automatic library - will be static or dynamic based on user setting
+add_library(modern_library ${HEADER_LIST})
+
+# We need this directory, and users of our library will need it too
+target_include_directories(modern_library PUBLIC ../include)
+
+# This depends on (header only) boost
+target_link_libraries(modern_library PRIVATE ${wxWidgets_INCLUDE_DIRS})
+
+# All users of this library will need at least C++11
+target_compile_features(modern_library PUBLIC cxx_std_11)
+
+# IDEs should put the headers in a nice place
+source_group(TREE "${PROJECT_SOURCE_DIR}/include" PREFIX "Header Files" FILES ${HEADER_LIST})
+
