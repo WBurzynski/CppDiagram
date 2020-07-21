@@ -21,7 +21,7 @@ public:
 	static mauseState* get();
 	static void set(stateName chosen, wxToggleButton* s);
 	static  wxToggleButton* getSource();
-	State() {};
+	State();
 private:
 	static wxToggleButton* source;
 	static unique_ptr<mauseState> instance;

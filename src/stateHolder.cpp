@@ -1,5 +1,10 @@
 #include "State.hpp"
 #include "NoButtonPressed.hpp"
+#include "ClassButtonPressed.hpp"
+#include "DataButtonPressed.hpp"
+
+State::State() { instance = make_unique<NoButtonPressed>(); };
+
 mauseState* State::get()
 {
 	return instance.get();
@@ -15,10 +20,6 @@ void State::set(stateName chosen, wxToggleButton* s)
 	case ClassButton:
 		instance = make_unique< ClassButtonPressed>();
 		break;
-	case DerrivedButton:
-		break;
-	case NestedButton:
-		break;
 	case DataButton:
 		instance = make_unique< DataButtonPressed>();
 		break;
@@ -32,6 +33,4 @@ void State::set(stateName chosen, wxToggleButton* s)
 		break;
 	}
 }
-
-mauseState* State::instance = make_unique<NoButtonPressed>();
 
