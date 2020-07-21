@@ -1,8 +1,8 @@
-#include "RelationPanel.h"
-#include "diagramWindow.h"
+#include "RelationPanel.hpp"
+#include "diagramWindow.hpp"
 #include "wx/panel.h"
 
-#include "classPanel.h"
+#include "ClassPanel.hpp"
 
 void RelationPanel::setLines()
 {

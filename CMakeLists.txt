@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 # Project name and a few useful settings. Other commands can pick up the results
-project(CppDiagram
-    VERSION 0.1
-    DESCRIPTION "An example project with CMake")
+project(CppDiagram)
 
 # Only do these if this is the main project, and not if it is included through add_subdirectory
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
@@ -27,6 +25,7 @@ endif()
 
 set(wxWidgets_CONFIGURATION mswu)
 find_package(wxWidgets COMPONENTS core base REQUIRED)
+include(${wxWidgets_USE_FILE})
 
 # The compiled library code is here
 add_subdirectory(src)

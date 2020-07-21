@@ -1,4 +1,4 @@
-#include "DataMemberDialog.h"
+#include "DataMemberDialog.hpp"
 #include "wx/msgdlg.h"
 void DataMemberDialog::OnModifierPicked(wxCommandEvent& event)
 {

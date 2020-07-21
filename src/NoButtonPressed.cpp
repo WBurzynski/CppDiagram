@@ -1,5 +1,5 @@
-#include "NoButtonPressed.h"
-#include "classPanel.h"
+#include "NoButtonPressed.hpp"
+#include "ClassPanel.hpp"
 void NoButtonPressed::onClassDown(ClassPanel *panel, wxMouseEvent& event)
 {
 	panel->CaptureMouse();

@@ -1,4 +1,4 @@
-#include "MemberPanel.h"
+#include "MemberPanel.hpp"
 
 void MemberPanel::OnMauseEnter(wxMouseEvent& event)
 {
@@ -76,7 +76,7 @@ MemberPanel::MemberPanel(wxWindow* parent, wxWindowID id, const wxPoint& pos, co
 	// Connect Events
 	Bind(wxEVT_ENTER_WINDOW, &MemberPanel::OnMauseEnter, this);
 	Bind(wxEVT_LEAVE_WINDOW, &MemberPanel::OnMauseLeave, this);
-	
+
 	editButton->Bind(wxEVT_COMMAND_BUTTON_CLICKED, &MemberPanel::OnEditPressed, this);
 	editButton->Bind(wxEVT_ENTER_WINDOW, &MemberPanel::OnChildMauseEnter, this);
 	editButton->Bind(wxEVT_LEAVE_WINDOW, &MemberPanel::OnChildMauseLeave, this);

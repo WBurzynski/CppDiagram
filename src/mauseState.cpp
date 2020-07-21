@@ -1,4 +1,4 @@
-#include "mauseState.h"
+#include "mauseState.hpp"
 
 void mauseState::onClassDown(ClassPanel *panel, wxMouseEvent& event)
 {

@@ -1,4 +1,4 @@
-#include "ArgumentPanel.h"
+#include "ArgumentPanel.hpp"
 
 dgArgument ArgumentPanel::GetValue()
 {

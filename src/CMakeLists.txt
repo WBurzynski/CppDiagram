@@ -4,19 +4,22 @@ cmake_minimum_required(VERSION 3.16)
 # show up in IDEs unless they are listed in add_library.
 
 # Optionally glob, but only for CMake 3.12 or later:
-file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${CppDiagram_SOURCE_DIR}/include/*.h")
-
+file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${CppDiagram_SOURCE_DIR}/include/*.hpp")
+file(GLOB SOURCE_LIST CONFIGURE_DEPENDS "${CppDiagram_SOURCE_DIR}/src/*.cpp")
 # Make an automatic library - will be static or dynamic based on user setting
-add_library(modern_library ${HEADER_LIST})
+add_library(modern_library ${SOURCE_LIST} ${HEADER_LIST})
 
 # We need this directory, and users of our library will need it too
 target_include_directories(modern_library PUBLIC ../include)
 
-# This depends on (header only) boost
-target_link_libraries(modern_library PRIVATE ${wxWidgets_INCLUDE_DIRS})
+# This depends on wxWidgets
+target_link_libraries(modern_library PRIVATE ${wxWidgets_LIBRARIES})
 
-# All users of this library will need at least C++11
-target_compile_features(modern_library PUBLIC cxx_std_11)
+# All users of this library will need at least C++17
+target_compile_features(modern_library PUBLIC cxx_std_17)
+
+# Linker language
+set_target_properties(modern_library PROPERTIES LINKER_LANGUAGE CXX)
 
 # IDEs should put the headers in a nice place
 source_group(TREE "${PROJECT_SOURCE_DIR}/include" PREFIX "Header Files" FILES ${HEADER_LIST})

@@ -1,7 +1,7 @@
-#include "NestingButtonPressed.h"
-#include "ClassPanel.h"
-#include "diagramWindow.h"
-#include "State.h"
+#include "NestingButtonPressed.hpp"
+#include "ClassPanel.hpp"
+#include "diagramWindow.hpp"
+#include "State.hpp"
 void NestingButtonPressed::onClassDown(ClassPanel* panel, wxMouseEvent& event)
 {
 	if (first == nullptr)

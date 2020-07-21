@@ -1,6 +1,6 @@
-#include "NoButtonPressed.h"
-
-void NoButtonPressed::onClassDown(classPanel *panel, wxMouseEvent& evt)
+#include "NoButtonPressed.hpp"
+#include "ClassPanel.hpp"
+void NoButtonPressed::onClassDown(ClassPanel *panel, wxMouseEvent& evt)
 {
 	panel->CaptureMouse();
 	panel->x = evt.GetX();
@@ -10,13 +10,13 @@ void NoButtonPressed::onClassDown(classPanel *panel, wxMouseEvent& evt)
 	panel->Refresh();
 }
 
-void NoButtonPressed::onClassUp(classPanel *panel, wxMouseEvent& evt)
+void NoButtonPressed::onClassUp(ClassPanel *panel, wxMouseEvent& evt)
 {
 	panel->ReleaseMouse();
 	panel->dragging = false;
 }
 
-void NoButtonPressed::onClassMove(classPanel *panel, wxMouseEvent& evt)
+void NoButtonPressed::onClassMove(ClassPanel *panel, wxMouseEvent& evt)
 {
 	if (panel->dragging)
 	{
@@ -27,14 +27,14 @@ void NoButtonPressed::onClassMove(classPanel *panel, wxMouseEvent& evt)
 	}
 }
 
-void NoButtonPressed::onPanelDown()
+void NoButtonPressed::onPanelDown(DiagramWindow* panel, wxMouseEvent& event)
 {
 }
 
-void NoButtonPressed::onPanelUp()
+void NoButtonPressed::onPanelUp(DiagramWindow* panel, wxMouseEvent& event)
 {
 }
 
-void NoButtonPressed::onPanelMove()
+void NoButtonPressed::onPanelMove(DiagramWindow* panel, wxMouseEvent& event)
 {
 }

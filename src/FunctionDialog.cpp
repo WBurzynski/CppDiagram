@@ -1,4 +1,4 @@
-#include "FunctionDialog.h"
+#include "FunctionDialog.hpp"
 
 void FunctionDialog::OnModifierPicked(wxCommandEvent& event)
 {
@@ -113,7 +113,7 @@ FunctionDialog::FunctionDialog(wxWindow* parent, dgFunction func) : FunctionDial
 	switch (func.visibility)
 	{
 	case dgVisibility::dgPublic:
-		VisibilityBox->SetSelection(0); 
+		VisibilityBox->SetSelection(0);
 		break;
 	case dgVisibility::dgProtected:
 		VisibilityBox->SetSelection(1);

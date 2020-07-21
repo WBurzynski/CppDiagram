@@ -1,9 +1,9 @@
-#include "DataButtonPressed.h"
-#include "ClassPanel.h"
-#include "diagramWindow.h"
-#include "State.h"
-#include <wx/tglbtn.h>
-#include "DataMemberDialog.h"
+#include "DataButtonPressed.hpp"
+#include "ClassPanel.hpp"
+#include "diagramWindow.hpp"
+#include "State.hpp"
+#include "wx/tglbtn.h"
+#include "DataMemberDialog.hpp"
 void DataButtonPressed::onClassDown(ClassPanel* panel, wxMouseEvent& event)
 {
 	DataMemberDialog* newMemberDialog = new DataMemberDialog(panel->GetParent());

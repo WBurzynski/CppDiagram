@@ -1,11 +1,11 @@
-#include "State.h"
-#include "NoButtonPressed.h"
-#include "ClassButtonPressed.h"
-#include "DataButtonPressed.h"
-#include "FunctionButtonPressed.h"
-#include "InheritanceButtonPressed.h"
-#include "FriendshipButtonPressed.h"
-#include "NestingButtonPressed.h"
+#include "State.hpp"
+#include "NoButtonPressed.hpp"
+#include "ClassButtonPressed.hpp"
+#include "DataButtonPressed.hpp"
+#include "FunctionButtonPressed.hpp"
+#include "InheritanceButtonPressed.hpp"
+#include "FriendshipButtonPressed.hpp"
+#include "NestingButtonPressed.hpp"
 mauseState* State::get()
 {
 	return instance.get();

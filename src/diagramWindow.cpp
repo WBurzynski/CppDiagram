@@ -1,5 +1,5 @@
-#include "diagramWindow.h"
-#include "State.h"
+#include "diagramWindow.hpp"
+#include "State.hpp"
 
 #include <algorithm>
 #include <fstream>

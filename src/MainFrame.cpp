@@ -1,8 +1,8 @@
-#include "MainFrame.h"
+#include "MainFrame.hpp"
 
-#include "fstream"
+#include <fstream>
 
-#include "State.h"
+#include "State.hpp"
 MainFrame::MainFrame(wxWindow* parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size, long style) : frameLayout(parent, id, title, pos, size, style)
 {
 	//TODO: Add possibility to change size of canvas

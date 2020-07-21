@@ -1,26 +1,26 @@
-#include "State.h"
-
-mauseState* State::getState()
+#include "State.hpp"
+#include "NoButtonPressed.hpp"
+mauseState* State::get()
 {
-	return instance;
+	return instance.get();
 }
 
-void State::setState(stateName chosen)
+void State::set(stateName chosen, wxToggleButton* s)
 {
 	switch (chosen)
 	{
 	case NoButton:
-		instance = new NoButtonPressed();
+		instance = make_unique< NoButtonPressed>();
 		break;
 	case ClassButton:
-		instance = new ClassButtonPressed();
+		instance = make_unique< ClassButtonPressed>();
 		break;
 	case DerrivedButton:
 		break;
 	case NestedButton:
 		break;
 	case DataButton:
-		instance = new DataButtonPressed();
+		instance = make_unique< DataButtonPressed>();
 		break;
 	case FunctionButton:
 		break;
@@ -33,5 +33,5 @@ void State::setState(stateName chosen)
 	}
 }
 
-mauseState* State::instance = new NoButtonPressed();
+mauseState* State::instance = make_unique<NoButtonPressed>();
 

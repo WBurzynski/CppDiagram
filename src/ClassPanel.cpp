@@ -1,7 +1,7 @@
-#include "classPanel.h"
-#include "State.h"
-#include "diagramWindow.h"
-#include "fstream"
+#include "ClassPanel.hpp"
+#include "State.hpp"
+#include "diagramWindow.hpp"
+#include <fstream>
 
 ClassPanel::ClassPanel(wxPanel* parent, string name) : wxPanel(parent, wxID_ANY)
 {
@@ -17,12 +17,12 @@ ClassPanel::ClassPanel(wxPanel* parent, string name) : wxPanel(parent, wxID_ANY)
 	m_staticline1 = new wxStaticLine(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL);
 	m_staticline1->Bind(wxEVT_LEFT_DOWN, &ClassPanel::onMouseDown, this);
 	MainSizer->Add(m_staticline1, 0, wxEXPAND | wxALL, 0);
-	
+
 	MainSizer->Add(DataSizer, 0, wxEXPAND, 5);
 	m_staticline2 = new wxStaticLine(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL);
 	m_staticline2->Bind(wxEVT_LEFT_DOWN, &ClassPanel::onMouseDown, this);
 	MainSizer->Add(m_staticline2, 0, wxEXPAND | wxALL, 0);
-	
+
 	MainSizer->Add(FunctionSizer, 0, wxEXPAND, 5);
 
 	this->SetSizer(MainSizer);

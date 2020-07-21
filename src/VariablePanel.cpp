@@ -1,6 +1,6 @@
-#include "VariablePanel.h"
-#include "classPanel.h"
-#include "DataMemberDialog.h"
+#include "VariablePanel.hpp"
+#include "ClassPanel.hpp"
+#include "DataMemberDialog.hpp"
 void VariablePanel::OnEditPressed(wxCommandEvent& event)
 {
 	DataMemberDialog* editMemberDialog = new DataMemberDialog(this->GetParent(), data);

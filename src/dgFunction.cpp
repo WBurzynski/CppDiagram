@@ -1,4 +1,4 @@
-#include "dgFunction.h"
+#include "dgFunction.hpp"
 
 void dgFunction::addArgument(dgArgument arg)
 {

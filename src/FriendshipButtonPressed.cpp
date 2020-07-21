@@ -1,7 +1,7 @@
-#include "FriendshipButtonPressed.h"
-#include "classPanel.h"
-#include "diagramWindow.h"
-#include "State.h"
+#include "FriendshipButtonPressed.hpp"
+#include "ClassPanel.hpp"
+#include "diagramWindow.hpp"
+#include "State.hpp"
 void FriendshipButtonPressed::onClassDown(ClassPanel* panel, wxMouseEvent& event)
 {
 	if (first == nullptr)

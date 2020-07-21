@@ -1,4 +1,4 @@
-#include "dgVariable.h"
+#include "dgVariable.hpp"
 
 string dgVariable::getDeclaration()
 {

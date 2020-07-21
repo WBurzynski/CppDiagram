@@ -1,9 +1,9 @@
-#include "FunctionButtonPressed.h"
-#include "ClassPanel.h"
-#include "diagramWindow.h"
-#include "State.h"
-#include <wx/tglbtn.h>
-#include "FunctionDialog.h"
+#include "FunctionButtonPressed.hpp"
+#include "ClassPanel.hpp"
+#include "diagramWindow.hpp"
+#include "State.hpp"
+#include "wx/tglbtn.h"
+#include "FunctionDialog.hpp"
 void FunctionButtonPressed::onClassDown(ClassPanel* panel, wxMouseEvent& event)
 {
 	FunctionDialog* newMemberDialog = new FunctionDialog(panel->GetParent());

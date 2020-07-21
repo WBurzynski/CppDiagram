@@ -1,6 +1,6 @@
-#include "FunctionPanel.h"
-#include "classPanel.h"
-#include "FunctionDialog.h"
+#include "FunctionPanel.hpp"
+#include "ClassPanel.hpp"
+#include "FunctionDialog.hpp"
 void FunctionPanel::OnEditPressed(wxCommandEvent& event)
 {
 	FunctionDialog* editMemberDialog = new FunctionDialog(this->GetParent(), data);

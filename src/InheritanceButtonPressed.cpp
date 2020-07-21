@@ -1,7 +1,7 @@
-#include "InheritanceButtonPressed.h"
-#include "classPanel.h"
-#include "diagramWindow.h"
-#include "State.h"
+#include "InheritanceButtonPressed.hpp"
+#include "ClassPanel.hpp"
+#include "diagramWindow.hpp"
+#include "State.hpp"
 void InheritanceButtonPressed::onClassDown(ClassPanel *panel, wxMouseEvent& event)
 {
 	if (first == nullptr)

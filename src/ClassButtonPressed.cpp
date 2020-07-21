@@ -1,10 +1,10 @@
-#include "ClassButtonPressed.h"
+#include "ClassButtonPressed.hpp"
 
 #include "wx/textdlg.h"
 
-#include "classPanel.h"
-#include "diagramWindow.h"
-#include "State.h"
+#include "ClassPanel.hpp"
+#include "diagramWindow.hpp"
+#include "State.hpp"
 
 void ClassButtonPressed::onClassDown(ClassPanel* panel, wxMouseEvent& event)
 {
@@ -14,7 +14,7 @@ void ClassButtonPressed::onClassDown(ClassPanel* panel, wxMouseEvent& event)
 void ClassButtonPressed::onPanelDown(DiagramWindow* panel, wxMouseEvent& event)
 {
 	wxTextEntryDialog* newClassDialog = new wxTextEntryDialog(panel->GetParent(),"Insert Class name","New Class","MyClass");
-	
+
 	if (newClassDialog->ShowModal() == wxID_OK)
 	{
 		//TODO: Check if user entered valid name

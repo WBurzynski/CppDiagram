@@ -1,4 +1,4 @@
-#include "dgArgument.h"
+#include "dgArgument.hpp"
 string dgArgument::getDeclaration()
 {
 	return type + " " + name + (defaultValue.size() != 0 ? " = " + defaultValue : "");
