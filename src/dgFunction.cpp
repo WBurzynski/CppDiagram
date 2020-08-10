@@ -12,7 +12,9 @@ string dgFunction::getDeclaration()
 	//# means protected
 	//- means private
 	string temp = (visibility == dgVisibility::dgPrivate ? "- " : (visibility == dgVisibility::dgProtected ? "# " : "+ "));
-	temp += (modifier == Modifier::dgVirtual ? "virtual " : "") + name + "( ";
+	temp += (modifier == Modifier::dgVirtual ? "virtual " : "");
+	temp += name;
+	temp += "(( ";
 	for (dgArgument arg : arguments)
 	{
 		temp += arg.getDeclaration() + ", ";

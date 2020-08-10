@@ -64,9 +64,9 @@ DiagramWindow::DiagramWindow(wxWindow* parent, wxWindowID winid, const wxPoint &
 	: wxScrolledWindow(parent, winid, pos, size, style)
 {
 	wxImage::AddHandler(new wxPNGHandler);
-	InheritanceArrowHead = wxImage("InheritanceArrowHead.png", wxBITMAP_TYPE_PNG);
-	FriendshipArrowHead = wxImage("FriendshipArrowHead.png", wxBITMAP_TYPE_PNG);
-	NestingArrowHead = wxImage("NestingArrowHead.png", wxBITMAP_TYPE_PNG);
+	InheritanceArrowHead = wxImage("assets/InheritanceArrowHead.png", wxBITMAP_TYPE_PNG);
+	FriendshipArrowHead = wxImage("assets/FriendshipArrowHead.png", wxBITMAP_TYPE_PNG);
+	NestingArrowHead = wxImage("assets/NestingArrowHead.png", wxBITMAP_TYPE_PNG);
 	//Three ClassPanels for testing purposes
 	//classPanels.push_back(new classPanel(this));
 	//classPanels.back()->SetPosition(wxPoint(100, 100));

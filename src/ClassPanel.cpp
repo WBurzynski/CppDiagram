@@ -10,6 +10,7 @@ ClassPanel::ClassPanel(wxPanel* parent, string name) : wxPanel(parent, wxID_ANY)
 	DataSizer = new wxBoxSizer(wxVERTICAL);
 	FunctionSizer = new wxBoxSizer(wxVERTICAL);
 	ClassName = new wxStaticText(this, wxID_ANY, name/* + std::to_string(ID)*/, wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE);
+	ClassName->SetForegroundColour(wxColour(0,0,0));
 	ClassName->Bind(wxEVT_LEFT_DOWN, &ClassPanel::onMouseDown, this);
 	ClassName->Wrap(-1);
 	MainSizer->Add(ClassName, 0, wxALL | wxEXPAND, 5);

@@ -55,6 +55,7 @@ MemberPanel::MemberPanel(wxWindow* parent, wxWindowID id, const wxPoint& pos, co
 	bSizer1 = new wxBoxSizer(wxHORIZONTAL);
 
 	memberText = new wxStaticText(this, wxID_ANY, wxT("MyLabel"), wxDefaultPosition, wxDefaultSize, 0);
+	memberText->SetForegroundColour(wxColour(0,0,0));
 	memberText->Wrap(-1);
 	bSizer1->Add(memberText, 0, wxALL, 5);
 
