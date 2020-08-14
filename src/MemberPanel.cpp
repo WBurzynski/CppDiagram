@@ -12,13 +12,13 @@ void MemberPanel::OnMauseEnter(wxMouseEvent& event)
 void MemberPanel::OnMauseLeave(wxMouseEvent& event)
 {
 	IsOverPanel = false;
-	if (!IsOverPanel && !IsOverButton)
+	if (!this->GetScreenRect().Contains(wxGetMousePosition()))
 	{
 		editButton->Hide();
 		deleteButton->Hide();
+		Fit();
+        GetParent()->Fit();
 	}
-	Fit();
-	GetParent()->Fit();
 }
 
 void MemberPanel::OnChildMauseEnter(wxMouseEvent& event)
