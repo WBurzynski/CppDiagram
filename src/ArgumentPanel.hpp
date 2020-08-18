@@ -18,7 +18,9 @@
 #include "dgArgument.hpp"
 
 using std::string;
-
+///
+///Some doc
+///
 class ArgumentPanel : public wxPanel
 {
 private:
