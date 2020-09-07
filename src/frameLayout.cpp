@@ -27,6 +27,10 @@ frameLayout::frameLayout( wxWindow* parent, wxWindowID id, const wxString& title
 	saveMenuItem = new wxMenuItem( fileMenu, wxID_ANY, wxString( wxT("Save") ) , wxEmptyString, wxITEM_NORMAL );
 	fileMenu->Append( saveMenuItem );
 
+	wxMenuItem* exportMenuItem;
+	exportMenuItem = new wxMenuItem( fileMenu, wxID_ANY, wxString( wxT("export") ) , wxEmptyString, wxITEM_NORMAL );
+	fileMenu->Append( exportMenuItem );
+
 	m_menubar1->Append( fileMenu, wxT("File") );
 
 	aboutMenu = new wxMenu();
@@ -110,6 +114,7 @@ frameLayout::frameLayout( wxWindow* parent, wxWindowID id, const wxString& title
 	this->Connect( newMenuItem->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnNewSelected ) );
 	this->Connect( openMenuItem->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnOpenSelected ) );
 	this->Connect( saveMenuItem->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnSaveSelected ) );
+	this->Connect( exportMenuItem->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnExportSelected ) );
 	this->Connect( authorMenuItem->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnAuthorSelected ) );
 	this->Connect( sourceMenuItem->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnSourceSelected ) );
 	classButton->Connect( wxEVT_COMMAND_TOGGLEBUTTON_CLICKED, wxCommandEventHandler( frameLayout::OnClassToggled ), NULL, this );
@@ -127,6 +132,7 @@ frameLayout::~frameLayout()
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnNewSelected ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnOpenSelected ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnSaveSelected ) );
+	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnExportSelected ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnAuthorSelected ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( frameLayout::OnSourceSelected ) );
 	classButton->Disconnect( wxEVT_COMMAND_TOGGLEBUTTON_CLICKED, wxCommandEventHandler( frameLayout::OnClassToggled ), NULL, this );

@@ -62,6 +62,7 @@ class frameLayout : public wxFrame
 		virtual void OnNewSelected( wxCommandEvent& event ) = 0;
 		virtual void OnOpenSelected( wxCommandEvent& event ) = 0;
 		virtual void OnSaveSelected( wxCommandEvent& event ) = 0;
+		virtual void OnExportSelected( wxCommandEvent& event ) = 0;
 		virtual void OnAuthorSelected( wxCommandEvent& event ) = 0;
 		virtual void OnSourceSelected( wxCommandEvent& event ) = 0;
 		virtual void OnClassToggled( wxCommandEvent& event ) = 0;
