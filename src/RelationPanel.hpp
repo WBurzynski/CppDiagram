@@ -6,26 +6,24 @@ class ClassPanel;
 
 class RelationPanel
 {
-	ClassPanel* first;
-	ClassPanel* second;
-	wxImage ArrowHeadImage;
-	wxPanel* vertical;
-	wxPanel* horisontal;
-	wxStaticBitmap* ArrowHead;
-public:
-	enum class relationType
-	{
-		Inheritance,
-		Friendship,
-		Nesting
-	} type;
+    ClassPanel *first;
+    ClassPanel *second;
+    wxImage ArrowHeadImage;
+    wxPanel *vertical;
+    wxPanel *horisontal;
+    wxStaticBitmap *ArrowHead;
 
-	void setLines();
-	void setArrowhead();
-	void serialize(std::ofstream& file);
+  public:
+    enum class relationType
+    {
+        Inheritance,
+        Friendship,
+        Nesting
+    } type;
 
+    void setLines();
+    void setArrowhead();
+    void serialize(std::ofstream &file);
 
-	RelationPanel(ClassPanel* _first, ClassPanel* _second, relationType _type);
-
+    RelationPanel(ClassPanel *_first, ClassPanel *_second, relationType _type);
 };
-

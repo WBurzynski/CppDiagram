@@ -5,16 +5,13 @@
 
 class FunctionPanel : public MemberPanel
 {
-private:
+  private:
+    dgFunction data;
 
-	dgFunction data;
+  private:
+    void OnEditPressed(wxCommandEvent &event) override;
+    void OnDeletePressed(wxCommandEvent &event) override;
 
-private:
-
-	void OnEditPressed(wxCommandEvent& event) override;
-	void OnDeletePressed(wxCommandEvent& event) override;
-public:
-
-	FunctionPanel(wxWindow* parent, dgFunction _data);
+  public:
+    FunctionPanel(wxWindow *parent, dgFunction _data);
 };
-

@@ -5,14 +5,11 @@
 
 class VariablePanel : public MemberPanel
 {
-private:
+  private:
+    dgVariable data;
 
-	dgVariable data;
-
-public:
-
-	void OnEditPressed(wxCommandEvent& event) override;
-	void OnDeletePressed(wxCommandEvent& event) override;
-	VariablePanel(wxWindow* parent, dgVariable _data);
+  public:
+    void OnEditPressed(wxCommandEvent &event) override;
+    void OnDeletePressed(wxCommandEvent &event) override;
+    VariablePanel(wxWindow *parent, dgVariable _data);
 };
-

@@ -7,13 +7,10 @@ class ClassPanel;
 class DiagramWindow;
 class FunctionButtonPressed : public mauseState
 {
-public:
-	virtual void onClassDown(ClassPanel* panel, wxMouseEvent& event) override;
+  public:
+    virtual void onClassDown(ClassPanel *panel, wxMouseEvent &event) override;
 
-	virtual void onPanelDown(DiagramWindow* panel, wxMouseEvent& event) override;
-	FunctionButtonPressed();
-	~FunctionButtonPressed();
+    virtual void onPanelDown(DiagramWindow *panel, wxMouseEvent &event) override;
+    FunctionButtonPressed();
+    ~FunctionButtonPressed();
 };
-
-
-

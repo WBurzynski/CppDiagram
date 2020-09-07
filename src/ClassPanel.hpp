@@ -1,7 +1,7 @@
 #pragma once
 
-#include "wx/wx.h"
 #include "wx/statline.h"
+#include "wx/wx.h"
 
 #include <string>
 #include <vector>
@@ -14,50 +14,49 @@ using std::vector;
 
 class ClassPanel : public wxPanel
 {
-public:
-	enum mode
-	{
-		newFunction,
-		newVariable
-	};
-private:
+  public:
+    enum mode
+    {
+        newFunction,
+        newVariable
+    };
 
-	wxBoxSizer *MainSizer, *DataSizer, *FunctionSizer;
-	wxStaticText* ClassName;
-	wxStaticLine* m_staticline1;
-	//TODO: Propagate sigle button click to parent
-	//NOTE: Parent is this class
-	vector<FunctionPanel*> memberFunctions;
-	wxStaticLine* m_staticline2;
-	//TODO: Propagate sigle button click to parent
-	//NOTE: Parent is this class
-	vector<VariablePanel*> memberVariables;
+  private:
+    wxBoxSizer *MainSizer, *DataSizer, *FunctionSizer;
+    wxStaticText *ClassName;
+    wxStaticLine *m_staticline1;
+    // TODO: Propagate sigle button click to parent
+    // NOTE: Parent is this class
+    vector<FunctionPanel *> memberFunctions;
+    wxStaticLine *m_staticline2;
+    // TODO: Propagate sigle button click to parent
+    // NOTE: Parent is this class
+    vector<VariablePanel *> memberVariables;
 
-	static int NextID;
-	int ID;
+    static int NextID;
+    int ID;
 
+    void onMouseDown(wxMouseEvent &event);
+    void onMouseUp(wxMouseEvent &event);
+    void onMove(wxMouseEvent &event);
 
-	void onMouseDown(wxMouseEvent& event);
-	void onMouseUp(wxMouseEvent& event);
-	void onMove(wxMouseEvent& event);
-public:
-	//TODO: Make those vectors and pointer private
-	//vector<classPanel*> parents;
-	//vector<classPanel*> friends;
-	//classPanel* outer{ nullptr };
+  public:
+    // TODO: Make those vectors and pointer private
+    // vector<classPanel*> parents;
+    // vector<classPanel*> friends;
+    // classPanel* outer{ nullptr };
 
-	int getID() const;
-	void addMember(dgFunction fun);
-	void addMember(dgVariable var);
+    int getID() const;
+    void addMember(dgFunction fun);
+    void addMember(dgVariable var);
 
-	void removeMember(FunctionPanel* fun);
-	void removeMember(VariablePanel* var);
+    void removeMember(FunctionPanel *fun);
+    void removeMember(VariablePanel *var);
 
-	void serialize(std::ofstream &file);
-	void deserialize(std::ifstream& file);
+    void serialize(std::ofstream &file);
+    void deserialize(std::ifstream &file);
 
-	ClassPanel(wxPanel* parent, string name = "MyClass");
+    ClassPanel(wxPanel *parent, string name = "MyClass");
 
-	friend class DiagramWindow;
+    friend class DiagramWindow;
 };
-

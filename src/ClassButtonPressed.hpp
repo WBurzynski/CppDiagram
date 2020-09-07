@@ -5,10 +5,9 @@ class ClassPanel;
 class DiagramWindow;
 class ClassButtonPressed : public mauseState
 {
-	void onClassDown(ClassPanel* panel, wxMouseEvent& event) override;
+    void onClassDown(ClassPanel *panel, wxMouseEvent &event) override;
 
-	void onPanelDown(DiagramWindow* panel, wxMouseEvent& event) override;
+    void onPanelDown(DiagramWindow *panel, wxMouseEvent &event) override;
 
-	friend class State;
+    friend class State;
 };
-
